@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dreza Sex Shop — Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0710; --bg2:#160a18; --card:#1d0f20; --line:#37203b;
+    --ink:#f6eef4; --muted:#b69bb8; --magenta:#ff2e88; --magenta-2:#ff6ab0;
+    --gold:#e8c66b; --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{display:block;width:100%;height:auto}
+
+  /* HEADER */
+  header{position:sticky;top:0;z-index:50;background:rgba(14,7,16,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .bar{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .brand{font-family:Fraunces,serif;font-weight:700;font-size:1.45rem;letter-spacing:-.01em;white-space:nowrap}
+  .brand .sex{color:var(--magenta)}
+  .search{flex:1;min-width:180px;position:relative}
+  .search input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:999px;color:var(--ink);padding:11px 16px 11px 42px;font-size:.95rem;outline:none;transition:border-color .2s}
+  .search input:focus{border-color:var(--magenta)}
+  .search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);opacity:.5}
+  .wa-top{background:var(--magenta);color:#fff;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem;white-space:nowrap;display:inline-flex;gap:7px;align-items:center;transition:background .2s}
+  .wa-top:hover{background:var(--magenta-2)}
+
+  /* HERO */
+  .hero{max-width:1180px;margin:0 auto;padding:54px 20px 30px;position:relative}
+  .hero-eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--magenta-2);font-weight:600;margin-bottom:14px}
+  .hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.02;letter-spacing:-.02em;max-width:13ch}
+  .hero h1 em{font-style:italic;color:var(--magenta)}
+  .hero p{margin-top:18px;max-width:46ch;color:var(--muted);font-size:1.05rem}
+  .hero .stat{margin-top:26px;display:flex;gap:30px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+  .hero .stat b{color:var(--ink);font-family:Fraunces,serif;font-size:1.4rem;display:block;line-height:1}
+
+  /* FILTER NAV */
+  .filters{position:sticky;top:69px;z-index:40;background:rgba(14,7,16,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .filters-inner{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;gap:10px;overflow-x:auto;scrollbar-width:none}
+  .filters-inner::-webkit-scrollbar{display:none}
+  .chip{background:transparent;border:1px solid var(--line);color:var(--muted);padding:8px 16px;border-radius:999px;font-size:.88rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:all .18s;font-family:inherit}
+  .chip:hover{border-color:var(--magenta-2);color:var(--ink)}
+  .chip.active{background:var(--magenta);border-color:var(--magenta);color:#fff}
+
+  /* GRID */
+  .wrap{max-width:1180px;margin:0 auto;padding:34px 20px 70px}
+  .count{font-size:.85rem;color:var(--muted);margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+  .card:hover{transform:translateY(-4px);border-color:var(--magenta)}
+  .thumb{aspect-ratio:3/4;overflow:hidden;background:#000;cursor:pointer}
+  .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .card:hover .thumb img{transform:scale(1.04)}
+  .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+  .cat-tag{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta-2);font-weight:600;margin-bottom:7px}
+  .card h3{font-size:.98rem;font-weight:600;line-height:1.25;margin-bottom:7px}
+  .card .desc{font-size:.82rem;color:var(--muted);flex:1;margin-bottom:14px}
+  .price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+  .price{font-family:Fraunces,serif;font-size:1.45rem;font-weight:600;color:var(--ink)}
+  .price small{font-size:.8rem;color:var(--muted);font-family:Inter}
+  .price.consult{font-size:.95rem;color:var(--gold)}
+  .buy{background:var(--magenta);color:#fff;border:none;border-radius:999px;padding:9px 14px;font-size:.82rem;font-weight:600;cursor:pointer;display:inline-flex;gap:6px;align-items:center;font-family:inherit;transition:background .18s;white-space:nowrap}
+  .buy:hover{background:var(--magenta-2)}
+  .empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:1rem}
+
+  /* LIGHTBOX */
+  .lb{position:fixed;inset:0;background:rgba(5,2,6,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+  .lb.open{display:flex}
+  .lb img{max-width:min(680px,92vw);max-height:88vh;width:auto;border-radius:12px;border:1px solid var(--line)}
+  .lb-close{position:absolute;top:20px;right:24px;color:#fff;font-size:2rem;cursor:pointer;line-height:1;background:none;border:none}
+
+  footer{border-top:1px solid var(--line);background:var(--bg2)}
+  .foot{max-width:1180px;margin:0 auto;padding:34px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}
+  .foot .brand{font-size:1.15rem}
+  .foot a.wa{color:var(--magenta-2);font-weight:600}
+  .age{font-size:.78rem;border:1px solid var(--line);border-radius:8px;padding:6px 11px;color:var(--muted)}
+
+  @media(max-width:560px){
+    .bar{gap:12px}
+    .brand{font-size:1.2rem;width:100%}
+    .hero{padding-top:36px}
+    .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+    .filters{top:113px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">Dreza <span class="sex">Sex Shop</span></div>
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="Buscar produto..." autocomplete="off">
+    </div>
+    <a class="wa-top" href="https://wa.me/5534988774824" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.6 1.6.4 1.9.4a2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.5-.3z"/></svg>
+      Fale conosco
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-eyebrow">PRAZER, SEDUÇÃO E CONFIANÇA</div>
+  <h1>Prazer e <em>discrição</em> entregues na sua porta.</h1>
+  <p>Catálogo completo da Dreza Sex Shop — géis, lubrificantes, lingerie, acessórios e cuidados. Compra segura, embalagem discreta e envio rápido.</p>
+  <div class="stat">
+    <div><b id="totalProdutos">0</b> produtos</div>
+    <div><b>5</b> categorias</div>
+    <div><b>+18</b> uso adulto</div>
+  </div>
+</section>
+
+<nav class="filters">
+  <div class="filters-inner" id="chips"></div>
+</nav>
+
+<main class="wrap">
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">Nenhum produto encontrado. Tente outro termo.</div>
+</main>
+
+<div class="lb" id="lb"><button class="lb-close" id="lbClose">&times;</button><img id="lbImg" src="" alt=""></div>
+
+<footer>
+  <div class="foot">
+    <div>
+      <div class="brand">Dreza <span style="color:var(--magenta)">Sex Shop</span></div>
+      <div style="margin-top:8px">WhatsApp: <a class="wa" href="https://wa.me/5534988774824" target="_blank" rel="noopener">34 98877-4824</a></div>
+    </div>
+    <div class="age">Conteudo +18 — Venda proibida para menores de 18 anos.</div>
+  </div>
+</footer>
+
+<script>
+const WA = "5534988774824";
+const CATS = [{"id": "geis", "nome": "Géis & Excitantes"}, {"id": "lubrificantes", "nome": "Lubrificantes"}, {"id": "lingerie", "nome": "Lingerie & Moda Íntima"}, {"id": "acessorios", "nome": "Acessórios & Brinquedos"}, {"id": "cuidados", "nome": "Cuidados & Bem-estar"}];
+const PRODUTOS = [{"nome": "QY Morango — Gel Excitante", "preco": 20.0, "cat": "geis", "desc": "Gel excitante corporal sabor morango. Excita, aquece e aumenta a sensibilidade. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_27.jpeg"}, {"nome": "Termo Shock — Cápsula Vibratória", "preco": 15.0, "cat": "geis", "desc": "Cápsula que esquenta e vibra em contato com a água. Uso íntimo externo. 1 unidade.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28.jpeg"}, {"nome": "Relaxana — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal que relaxa, aquece e estimula o prazer. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28__2_.jpeg"}, {"nome": "Fácil Lub Chocolate — Lubrificante", "preco": 20.0, "cat": "lubrificantes", "desc": "Gel lubrificante íntimo sabor chocolate. Base aquosa, aroma suave. 45g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28__6_.jpeg"}, {"nome": "Mais BumBum — Gel Firmador", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal com efeito firmador e tonificante para a região dos glúteos. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__1_.jpeg"}, {"nome": "Nu Talo — Aromatizante Bucal", "preco": 25.0, "cat": "cuidados", "desc": "Aromatizante bucal que proporciona hálito fresco e combate o mau hálito. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__2_.jpeg"}, {"nome": "Plug Anal Pompom", "preco": 35.0, "cat": "acessorios", "desc": "Plug anal em metal com pompom removível. Formato anatômico, hipoalergênico. 1 unidade.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__3_.jpeg"}, {"nome": "Clitor Max — Gel Sensibilizante", "preco": 20.0, "cat": "geis", "desc": "Gel sensibilizante para massagem corporal. Intensifica a sensibilidade da região clitoriana. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__4_.jpeg"}, {"nome": "Taduro — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem com ativos naturais. Estimula a excitação e melhora a circulação. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30.jpeg"}, {"nome": "Garganta Profunda — Bala Líquida", "preco": 25.0, "cat": "geis", "desc": "Bala líquida sabor maçã verde. Refresca, lubrifica e esquenta levemente. Uso íntimo externo. 18ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__1_.jpeg"}, {"nome": "Kama Sutra — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal. Estimula a libido, intensifica o prazer e relaxa. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__2_.jpeg"}, {"nome": "Love Ice Menta — Gel Beijável", "preco": 20.0, "cat": "geis", "desc": "Gel beijável para massagem sabor menta ice. Sensação refrescante e lubrificante. 20ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__3_.jpeg"}, {"nome": "Gel Excitante Feminino", "preco": 20.0, "cat": "geis", "desc": "Gel excitante feminino. Aumenta a excitação, hidrata e estimula o desejo. Testado ginecologicamente.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__4_.jpeg"}, {"nome": "Garji Prorrogação — Gel Masculino", "preco": 20.0, "cat": "geis", "desc": "Gel corporal masculino que ajuda a prolongar o tempo da relação. Base água. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__5_.jpeg"}, {"nome": "Volumão — Gel Estimulante Masculino", "preco": 30.0, "cat": "geis", "desc": "Gel excitante e estimulante masculino com ação vasodilatadora. Ginseng e damiana. Base água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31.jpeg"}, {"nome": "Baby Doll — Tamanho Único", "preco": 30.0, "cat": "lingerie", "desc": "Baby doll feminino confortável, blusinha de alças e shortinho. Veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__1_.jpeg"}, {"nome": "Pijama Conforto", "preco": 30.0, "cat": "lingerie", "desc": "Pijama feminino tecido macio. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__2_.jpeg"}, {"nome": "Mama Teta — Gel Beijável", "preco": 20.0, "cat": "geis", "desc": "Gel beijável para os seios, sabor ninho. Hidrata e desperta a sensualidade. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__3_.jpeg"}, {"nome": "Esparthela — Gel para Massagem", "preco": 25.0, "cat": "geis", "desc": "Gel para massagem corporal sensual. Relaxamento, prazer e bem-estar. 30ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__4_.jpeg"}, {"nome": "Vemvara Sexy — Gel para Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem corporal sensual. Aquece, excita e hidrata a pele. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__5_.jpeg"}, {"nome": "Conjunto Conforto que Acolhe", "preco": 30.0, "cat": "lingerie", "desc": "Conjunto pijama leve e fresquinho. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32.jpeg"}, {"nome": "Body Eletrizante — Gel Feminino", "preco": 15.0, "cat": "geis", "desc": "Gel corporal feminino com sensação eletrizante. Aumenta a sensibilidade ao toque. 62g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__1_.jpeg"}, {"nome": "Camisola Sensual — Renda e Cetim", "preco": 50.0, "cat": "lingerie", "desc": "Camisola sensual em renda e cetim, costas abertas, alças ajustáveis. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__2_.jpeg"}, {"nome": "Caliente — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal. Aquece, estimula e aumenta a sensibilidade. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__3_.jpeg"}, {"nome": "Calcinha Fio Dental — Detalhe Amor", "preco": 30.0, "cat": "lingerie", "desc": "Calcinha fio dental com pingente dourado 'AMOR'. Regulagem lateral. Veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__4_.jpeg"}, {"nome": "Turbo — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal com extratos naturais. Excita, aquece e ativa a circulação. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33.jpeg"}, {"nome": "Sken'ta Sfria — Gel Quente e Frio", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem com dupla sensação quente e frio. Lubrifica e hidrata. 18g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__1_.jpeg"}, {"nome": "Sais de Banho — Frutas Vermelhas", "preco": 30.0, "cat": "cuidados", "desc": "Sais de banho com óleos essenciais, aroma frutas vermelhas. Relaxa e hidrata. 120g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__2_.jpeg"}, {"nome": "Êxtase — Bolinha Intensificadora", "preco": 20.0, "cat": "acessorios", "desc": "Bolinhas intensificadoras para uso interno. Tonificam a musculatura pélvica. Use com lubrificante.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__3_.jpeg"}, {"nome": "Espuma de Banho — Frutas Vermelhas", "preco": 30.0, "cat": "cuidados", "desc": "Espuma de banho cremosa, aroma frutas vermelhas. Hidratação, frescor e prazer. 120ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__4_.jpeg"}, {"nome": "Boket Foodsex — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal. Aumenta a excitação e a sensibilidade. Ideal para casais. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34.jpeg"}, {"nome": "Essa Fadinha — Gel para Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem. Lubrifica, desperta a sensualidade e refresca. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__1_.jpeg"}, {"nome": "Fácil Lub Menta — Lubrificante", "preco": 20.0, "cat": "lubrificantes", "desc": "Gel lubrificante íntimo sabor menta. Base aquosa, aroma refrescante. 45g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__2_.jpeg"}, {"nome": "Piriquita Massanhada — Gel", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem com sensação de calor e frio. Aumenta a sensibilidade. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__3_.jpeg"}, {"nome": "Aquelas Paradas Loucas — Gel", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem corporal sensual. Estimula a sensibilidade e desliza. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__4_.jpeg"}, {"nome": "Tanga Tesão — Renda com Pingente", "preco": 30.0, "cat": "lingerie", "desc": "Tanga em renda com detalhe dourado 'TESÃO'. Ajuste confortável. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35.jpeg"}, {"nome": "Meia Arrastão com Strass", "preco": 30.0, "cat": "lingerie", "desc": "Meia arrastão com strass (meia da coxa para baixo). Tamanho M.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__1_.jpeg"}, {"nome": "Tanga Vermelha — Renda com Pingente", "preco": 30.0, "cat": "lingerie", "desc": "Tanga vermelha em renda com detalhe dourado 'AMOR'. Ajuste confortável. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__2_.jpeg"}, {"nome": "Calcinha com Babado — Branca", "preco": 30.0, "cat": "lingerie", "desc": "Calcinha branca com babado em renda delicada e cinta-liga de perna. Tamanho único, sem calcinha extra.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__3_.jpeg"}, {"nome": "Venda / Máscara Vermelha", "preco": 15.0, "cat": "acessorios", "desc": "Venda/máscara vermelha em couro sintético. Desperta os sentidos com mais mistério.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36.jpeg"}, {"nome": "Cinta-Liga Renda Vermelha", "preco": 30.0, "cat": "lingerie", "desc": "Cinta-liga em renda delicada vermelha. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__1_.jpeg"}, {"nome": "Calcinha com Babado — Branca II", "preco": 30.0, "cat": "lingerie", "desc": "Calcinha branca com babado e laços em renda. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__2_.jpeg"}, {"nome": "Meia 7/8 — Renda", "preco": 20.0, "cat": "lingerie", "desc": "Meia 7/8 com renda delicada. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__3_.jpeg"}, {"nome": "Cinta-Liga com Tiras — Vermelha", "preco": 30.0, "cat": "lingerie", "desc": "Cinta-liga vermelha em renda com tiras na perna. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__4_.jpeg"}, {"nome": "Plug / Acessório Unissex 17cm", "preco": 50.0, "cat": "acessorios", "desc": "Acessório unissex anal/vaginal com ventosa. Tamanho 17 x 4,1 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37.jpeg"}, {"nome": "Gotas Huô Bing — Gel de Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel de massagem corporal. Sensação refrescante e alívio muscular. Uso diário.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__1_.jpeg"}, {"nome": "Tesão na Raba — Gel Dessensibilizante", "preco": 20.0, "cat": "geis", "desc": "Gel dessensibilizante excitante. Reduz a sensibilidade da região anal e aquece. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__2_.jpeg"}, {"nome": "Dragon & Tiger — Pomada Excitante", "preco": null, "cat": "geis", "desc": "Creme japonês excitante. Sensação de aquecimento e maior sensibilidade. Uso externo.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__3_.jpeg"}, {"nome": "Vibrador Duplo Unissex com Ventosa", "preco": 65.0, "cat": "acessorios", "desc": "Acessório duplo unissex com ventosa. Tamanhos 17,3 x 3,5 cm e 10,5 x 2,3 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__4_.jpeg"}, {"nome": "Lacradinha — Gel Adstringente", "preco": 20.0, "cat": "geis", "desc": "Gel adstringente feminino. Sensação de firmeza e frescor na região íntima. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__5_.jpeg"}, {"nome": "Conjunto Colegial — Vermelho", "preco": 30.0, "cat": "lingerie", "desc": "Conjunto sensual estilo colegial, renda e detalhes delicados. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38.jpeg"}, {"nome": "Sako Loko — Gel para Massagem", "preco": 20.0, "cat": "geis", "desc": "Gel para massagem corporal. Lubrifica, aumenta a sensibilidade e a diversão. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__1_.jpeg"}, {"nome": "Ah Now — Sexy Balls (cápsulas)", "preco": 20.0, "cat": "cuidados", "desc": "Cápsulas mastigáveis 7x1. Energia, disposição e excitação. Contém 3 unidades. Uso adulto.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__2_.jpeg"}, {"nome": "Algema Metal com Pelúcia Vermelha", "preco": 35.0, "cat": "acessorios", "desc": "Algema de metal com pelúcia vermelha. Toque macio e segurança. Acompanha chave.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__3_.jpeg"}, {"nome": "Óleo Japonês — Esquenta", "preco": 20.0, "cat": "geis", "desc": "Óleo corporal que esquenta e desperta o desejo. Ideal para sexo oral e massagem. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__4_.jpeg"}, {"nome": "Plug / Acessório Unissex 15cm", "preco": 50.0, "cat": "acessorios", "desc": "Acessório unissex com base ventosa. Tamanho 15,4 x 3,9 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39.jpeg"}, {"nome": "Apimen — Sabonete Líquido For Men", "preco": 15.0, "cat": "cuidados", "desc": "Sabonete líquido masculino com extratos naturais. Limpeza eficaz e ação refrescante. 210ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__1_.jpeg"}, {"nome": "Body Gatinha — Tela Pink", "preco": 50.0, "cat": "lingerie", "desc": "Body sensual em tela com detalhes pink, acompanha orelhinhas. Tam. 36 a 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__2_.jpeg"}, {"nome": "Cinta-Liga Renda Branca", "preco": 30.0, "cat": "lingerie", "desc": "Cinta-liga em renda branca delicada. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__3_.jpeg"}, {"nome": "Cinta Peniana — Unissex", "preco": 35.0, "cat": "acessorios", "desc": "Cinta peniana com sustentação. Material resistente e macio, alças ajustáveis. Unissex.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__4_.jpeg"}, {"nome": "Hotball Plus — Cápsula Esquenta & Esfria", "preco": 15.0, "cat": "geis", "desc": "Cápsulas beijáveis sabor morango com menta gelada. Dupla sensação quente/frio. 2 unidades.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40.jpeg"}, {"nome": "Bola com Fita — Fetiche e Jogos", "preco": 40.0, "cat": "acessorios", "desc": "Mordaça de bola com fita de cetim para fetiche e jogos. Bola PVC macia. Unissex.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__1_.jpeg"}, {"nome": "Love Lub Ice — Lubrificante", "preco": 35.0, "cat": "lubrificantes", "desc": "Lubrificante corporal com efeito ICE refrescante. Base água. 60g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__2_.jpeg"}, {"nome": "Brutus — Gel Potencializador", "preco": 20.0, "cat": "geis", "desc": "Gel potencializador. Aumenta a disposição, melhora o desempenho e estimula a circulação. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__3_.jpeg"}, {"nome": "Conjunto Diaba — Vermelho", "preco": 30.0, "cat": "lingerie", "desc": "Conjunto sensual vermelho que valoriza as curvas. Tamanho único. Não acompanha acessórios.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__4_.jpeg"}, {"nome": "Body NCIS — Preto", "preco": 20.0, "cat": "lingerie", "desc": "Body sensual preto com recortes e amarrações. Tecido leve e elástico.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__5_.jpeg"}, {"nome": "Love Ice — Gel Umectante", "preco": 20.0, "cat": "geis", "desc": "Gel umectante corporal com efeito gelado que esquenta a paixão. Sabor morango. 30ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41.jpeg"}, {"nome": "Kit Fantasia Sensual", "preco": 30.0, "cat": "lingerie", "desc": "Kit fantasia: top, calcinha com tiras e tiras para as pernas. Uso adulto.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__1_.jpeg"}, {"nome": "Liga Renda com Laço", "preco": 15.0, "cat": "lingerie", "desc": "Liga de renda com laço e pérola. Ajuste confortável. Ideal para noivas e noites especiais.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__2_.jpeg"}, {"nome": "Conjunto Branco — Tamanho Único", "preco": 30.0, "cat": "lingerie", "desc": "Conjunto sensual branco, tecido leve com elasticidade. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__3_.jpeg"}, {"nome": "Pétalas Aromáticas de Coração", "preco": 25.0, "cat": "cuidados", "desc": "50 pétalas em formato de coração, essência de rosas. Para decoração romântica. Reutilizáveis.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42.jpeg"}, {"nome": "Love Lub Neutro — Lubrificante", "preco": 35.0, "cat": "lubrificantes", "desc": "Lubrificante corporal neutro. Base água, não altera o cheiro natural da pele. 60g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__1_.jpeg"}, {"nome": "Vibrador Ponta de Língua", "preco": 40.0, "cat": "acessorios", "desc": "Vibrador ponta de língua unissex, com bateria. Estimulação localizada.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__2_.jpeg"}, {"nome": "Na Maldade — Perfume de Cueca", "preco": 25.0, "cat": "cuidados", "desc": "Perfume de cueca masculino. Fragrância marcante e longa duração. 40ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__3_.jpeg"}, {"nome": "Body NCIS Plus — Renda Preta", "preco": 50.0, "cat": "lingerie", "desc": "Body em renda floral com gargantilha e punhos. Acabamento reforçado. Plus size.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__4_.jpeg"}, {"nome": "Pinto Likes — Gel Térmico", "preco": 20.0, "cat": "geis", "desc": "Gel térmico corporal. Sensação de aquecimento e estímulo da circulação. Extratos naturais. 35g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43.jpeg"}, {"nome": "Suave Gotas — Lubrificação Íntima", "preco": 20.0, "cat": "lubrificantes", "desc": "Gel para lubrificação íntima. Fórmula hidrossolúvel, incolor e sem cheiro. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__1_.jpeg"}, {"nome": "+Sabor Fresh Menta — Gel Corporal", "preco": 20.0, "cat": "cuidados", "desc": "Gel corporal sabor menta. Sensação de frescor com extrato de menta. Uso diário.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__2_.jpeg"}, {"nome": "Adesivos para Seios (kit 3)", "preco": 20.0, "cat": "acessorios", "desc": "Kit com 3 pares de adesivos para seios, discretos e reutilizáveis. À prova d'água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__3_.jpeg"}, {"nome": "Pó Mágico da Bruxa — Energético", "preco": 5.0, "cat": "cuidados", "desc": "Energético em pó para misturar na bebida. Mais energia e disposição.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__4_.jpeg"}, {"nome": "Espartilho Vermelho — Sem Meia", "preco": 90.0, "cat": "lingerie", "desc": "Espartilho vermelho com cinta-liga. Sem meia. Tam. 36 a 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44.jpeg"}, {"nome": "Dragão Chinês — Gel Excitante Super Quente", "preco": 20.0, "cat": "geis", "desc": "Gel excitante super quente. Calor intenso que incendeia o prazer. Versátil. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__1_.jpeg"}, {"nome": "Vibrador Rosa — Sugador", "preco": 100.0, "cat": "acessorios", "desc": "Sugador formato rosa com 10 modos de sucção/vibração. Carregamento magnético.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__2_.jpeg"}, {"nome": "Vibrador Clássico", "preco": 50.0, "cat": "acessorios", "desc": "Vibrador clássico em plástico ABS. Vibração poderosa, silencioso, à prova d'água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__3_.jpeg"}];
+let filtroCat = "todos", termo = "";
+
+const catNome = id => (CATS.find(c=>c.id===id)||{}).nome || "";
+const fmt = p => p==null ? null : "R$ " + p.toFixed(2).replace(".",",");
+
+function waLink(nome, preco){
+  const precoTxt = preco==null ? "" : (" (" + fmt(preco) + ")");
+  const msg = encodeURIComponent("Ola! Tenho interesse no produto: " + nome + precoTxt + ". Esta disponivel?");
+  return "https://wa.me/" + WA + "?text=" + msg;
+}
+
+function render(){
+  const grid = document.getElementById("grid");
+  const t = termo.trim().toLowerCase();
+  const lista = PRODUTOS.filter(p=>{
+    const okCat = filtroCat==="todos" || p.cat===filtroCat;
+    const okTxt = !t || p.nome.toLowerCase().includes(t) || p.desc.toLowerCase().includes(t) || catNome(p.cat).toLowerCase().includes(t);
+    return okCat && okTxt;
+  });
+  document.getElementById("count").textContent = lista.length + (lista.length===1?" produto":" produtos");
+  document.getElementById("empty").style.display = lista.length? "none":"block";
+  grid.innerHTML = lista.map(p=>{
+    const preco = p.preco==null
+      ? '<div class="price consult">Consultar</div>'
+      : '<div class="price"><small>R$ </small>'+p.preco.toFixed(2).replace(".",",")+'</div>';
+    return `<article class="card">
+      <div class="thumb" data-img="imagens/${p.img}"><img loading="lazy" src="imagens/${p.img}" alt="${p.nome}"></div>
+      <div class="body">
+        <div class="cat-tag">${catNome(p.cat)}</div>
+        <h3>${p.nome}</h3>
+        <p class="desc">${p.desc}</p>
+        <div class="price-row">
+          ${preco}
+          <a class="buy" href="${waLink(p.nome,p.preco)}" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+            Comprar
+          </a>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function buildChips(){
+  const chips = document.getElementById("chips");
+  const all = [{id:"todos",nome:"Todos"}].concat(CATS);
+  chips.innerHTML = all.map(c=>`<button class="chip${c.id==='todos'?' active':''}" data-cat="${c.id}">${c.nome}</button>`).join("");
+  chips.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+    filtroCat=b.dataset.cat;
+    chips.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    render();
+  });
+}
+
+document.getElementById("q").addEventListener("input",e=>{termo=e.target.value;render();});
+
+// Lightbox
+const lb=document.getElementById("lb"), lbImg=document.getElementById("lbImg");
+document.getElementById("grid").addEventListener("click",e=>{
+  const t=e.target.closest(".thumb");
+  if(t){lbImg.src=t.dataset.img;lb.classList.add("open");}
+});
+document.getElementById("lbClose").onclick=()=>lb.classList.remove("open");
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove("open");};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("open");});
+
+document.getElementById("totalProdutos").textContent = PRODUTOS.length;
+buildChips();
+render();
+</script>
+</body>
+</html>
