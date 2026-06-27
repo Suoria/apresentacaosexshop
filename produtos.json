@@ -6,96 +6,615 @@
     "slogan": "Prazer, sedução e confiança"
   },
   "categorias": [
-    { "id": "geis", "nome": "Géis & Excitantes" },
-    { "id": "lubrificantes", "nome": "Lubrificantes" },
-    { "id": "lingerie", "nome": "Lingerie & Moda Íntima" },
-    { "id": "acessorios", "nome": "Acessórios & Brinquedos" },
-    { "id": "cuidados", "nome": "Cuidados & Bem-estar" }
+    {
+      "id": "geis",
+      "nome": "Géis & Excitantes"
+    },
+    {
+      "id": "lubrificantes",
+      "nome": "Lubrificantes"
+    },
+    {
+      "id": "lingerie",
+      "nome": "Lingerie & Moda Íntima"
+    },
+    {
+      "id": "acessorios",
+      "nome": "Acessórios & Brinquedos"
+    },
+    {
+      "id": "cuidados",
+      "nome": "Cuidados & Bem-estar"
+    }
   ],
   "produtos": [
-    { "nome": "QY Morango — Gel Excitante", "preco": 20.00, "cat": "geis", "desc": "Gel excitante corporal sabor morango. Excita, aquece e aumenta a sensibilidade. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_27.jpeg" },
-    { "nome": "Termo Shock — Cápsula Vibratória", "preco": 15.00, "cat": "geis", "desc": "Cápsula que esquenta e vibra em contato com a água. Uso íntimo externo. 1 unidade.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28.jpeg" },
-    { "nome": "Relaxana — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal que relaxa, aquece e estimula o prazer. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28__2_.jpeg" },
-    { "nome": "Fácil Lub Chocolate — Lubrificante", "preco": 20.00, "cat": "lubrificantes", "desc": "Gel lubrificante íntimo sabor chocolate. Base aquosa, aroma suave. 45g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_28__6_.jpeg" },
-    { "nome": "Mais BumBum — Gel Firmador", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal com efeito firmador e tonificante para a região dos glúteos. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__1_.jpeg" },
-    { "nome": "Nu Talo — Aromatizante Bucal", "preco": 25.00, "cat": "cuidados", "desc": "Aromatizante bucal que proporciona hálito fresco e combate o mau hálito. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__2_.jpeg" },
-    { "nome": "Plug Anal Pompom", "preco": 35.00, "cat": "acessorios", "desc": "Plug anal em metal com pompom removível. Formato anatômico, hipoalergênico. 1 unidade.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__3_.jpeg" },
-    { "nome": "Clitor Max — Gel Sensibilizante", "preco": 20.00, "cat": "geis", "desc": "Gel sensibilizante para massagem corporal. Intensifica a sensibilidade da região clitoriana. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_29__4_.jpeg" },
-    { "nome": "Taduro — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem com ativos naturais. Estimula a excitação e melhora a circulação. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30.jpeg" },
-    { "nome": "Garganta Profunda — Bala Líquida", "preco": 25.00, "cat": "geis", "desc": "Bala líquida sabor maçã verde. Refresca, lubrifica e esquenta levemente. Uso íntimo externo. 18ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__1_.jpeg" },
-    { "nome": "Kama Sutra — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal. Estimula a libido, intensifica o prazer e relaxa. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__2_.jpeg" },
-    { "nome": "Love Ice Menta — Gel Beijável", "preco": 20.00, "cat": "geis", "desc": "Gel beijável para massagem sabor menta ice. Sensação refrescante e lubrificante. 20ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__3_.jpeg" },
-    { "nome": "Gel Excitante Feminino", "preco": 20.00, "cat": "geis", "desc": "Gel excitante feminino. Aumenta a excitação, hidrata e estimula o desejo. Testado ginecologicamente.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__4_.jpeg" },
-    { "nome": "Garji Prorrogação — Gel Masculino", "preco": 20.00, "cat": "geis", "desc": "Gel corporal masculino que ajuda a prolongar o tempo da relação. Base água. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_30__5_.jpeg" },
-    { "nome": "Volumão — Gel Estimulante Masculino", "preco": 30.00, "cat": "geis", "desc": "Gel excitante e estimulante masculino com ação vasodilatadora. Ginseng e damiana. Base água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31.jpeg" },
-    { "nome": "Baby Doll — Tamanho Único", "preco": 30.00, "cat": "lingerie", "desc": "Baby doll feminino confortável, blusinha de alças e shortinho. Veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__1_.jpeg" },
-    { "nome": "Pijama Conforto", "preco": 30.00, "cat": "lingerie", "desc": "Pijama feminino tecido macio. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__2_.jpeg" },
-    { "nome": "Mama Teta — Gel Beijável", "preco": 20.00, "cat": "geis", "desc": "Gel beijável para os seios, sabor ninho. Hidrata e desperta a sensualidade. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__3_.jpeg" },
-    { "nome": "Esparthela — Gel para Massagem", "preco": 25.00, "cat": "geis", "desc": "Gel para massagem corporal sensual. Relaxamento, prazer e bem-estar. 30ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__4_.jpeg" },
-    { "nome": "Vemvara Sexy — Gel para Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem corporal sensual. Aquece, excita e hidrata a pele. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_31__5_.jpeg" },
-    { "nome": "Conjunto Conforto que Acolhe", "preco": 30.00, "cat": "lingerie", "desc": "Conjunto pijama leve e fresquinho. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32.jpeg" },
-    { "nome": "Body Eletrizante — Gel Feminino", "preco": 15.00, "cat": "geis", "desc": "Gel corporal feminino com sensação eletrizante. Aumenta a sensibilidade ao toque. 62g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__1_.jpeg" },
-    { "nome": "Camisola Sensual — Renda e Cetim", "preco": 50.00, "cat": "lingerie", "desc": "Camisola sensual em renda e cetim, costas abertas, alças ajustáveis. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__2_.jpeg" },
-    { "nome": "Caliente — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal. Aquece, estimula e aumenta a sensibilidade. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__3_.jpeg" },
-    { "nome": "Calcinha Fio Dental — Detalhe Amor", "preco": 30.00, "cat": "lingerie", "desc": "Calcinha fio dental com pingente dourado 'AMOR'. Regulagem lateral. Veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_32__4_.jpeg" },
-    { "nome": "Turbo — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal com extratos naturais. Excita, aquece e ativa a circulação. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33.jpeg" },
-    { "nome": "Sken'ta Sfria — Gel Quente e Frio", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem com dupla sensação quente e frio. Lubrifica e hidrata. 18g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__1_.jpeg" },
-    { "nome": "Sais de Banho — Frutas Vermelhas", "preco": 30.00, "cat": "cuidados", "desc": "Sais de banho com óleos essenciais, aroma frutas vermelhas. Relaxa e hidrata. 120g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__2_.jpeg" },
-    { "nome": "Êxtase — Bolinha Intensificadora", "preco": 20.00, "cat": "acessorios", "desc": "Bolinhas intensificadoras para uso interno. Tonificam a musculatura pélvica. Use com lubrificante.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__3_.jpeg" },
-    { "nome": "Espuma de Banho — Frutas Vermelhas", "preco": 30.00, "cat": "cuidados", "desc": "Espuma de banho cremosa, aroma frutas vermelhas. Hidratação, frescor e prazer. 120ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_33__4_.jpeg" },
-    { "nome": "Boket Foodsex — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal. Aumenta a excitação e a sensibilidade. Ideal para casais. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34.jpeg" },
-    { "nome": "Essa Fadinha — Gel para Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem. Lubrifica, desperta a sensualidade e refresca. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__1_.jpeg" },
-    { "nome": "Fácil Lub Menta — Lubrificante", "preco": 20.00, "cat": "lubrificantes", "desc": "Gel lubrificante íntimo sabor menta. Base aquosa, aroma refrescante. 45g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__2_.jpeg" },
-    { "nome": "Piriquita Massanhada — Gel", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem com sensação de calor e frio. Aumenta a sensibilidade. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__3_.jpeg" },
-    { "nome": "Aquelas Paradas Loucas — Gel", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem corporal sensual. Estimula a sensibilidade e desliza. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_34__4_.jpeg" },
-    { "nome": "Tanga Tesão — Renda com Pingente", "preco": 30.00, "cat": "lingerie", "desc": "Tanga em renda com detalhe dourado 'TESÃO'. Ajuste confortável. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35.jpeg" },
-    { "nome": "Meia Arrastão com Strass", "preco": 30.00, "cat": "lingerie", "desc": "Meia arrastão com strass (meia da coxa para baixo). Tamanho M.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__1_.jpeg" },
-    { "nome": "Tanga Vermelha — Renda com Pingente", "preco": 30.00, "cat": "lingerie", "desc": "Tanga vermelha em renda com detalhe dourado 'AMOR'. Ajuste confortável. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__2_.jpeg" },
-    { "nome": "Calcinha com Babado — Branca", "preco": 30.00, "cat": "lingerie", "desc": "Calcinha branca com babado em renda delicada e cinta-liga de perna. Tamanho único, sem calcinha extra.", "img": "WhatsApp_Image_2026-06-27_at_14_25_35__3_.jpeg" },
-    { "nome": "Venda / Máscara Vermelha", "preco": 15.00, "cat": "acessorios", "desc": "Venda/máscara vermelha em couro sintético. Desperta os sentidos com mais mistério.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36.jpeg" },
-    { "nome": "Cinta-Liga Renda Vermelha", "preco": 30.00, "cat": "lingerie", "desc": "Cinta-liga em renda delicada vermelha. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__1_.jpeg" },
-    { "nome": "Calcinha com Babado — Branca II", "preco": 30.00, "cat": "lingerie", "desc": "Calcinha branca com babado e laços em renda. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__2_.jpeg" },
-    { "nome": "Meia 7/8 — Renda", "preco": 20.00, "cat": "lingerie", "desc": "Meia 7/8 com renda delicada. Tamanho único, veste do 36 ao 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__3_.jpeg" },
-    { "nome": "Cinta-Liga com Tiras — Vermelha", "preco": 30.00, "cat": "lingerie", "desc": "Cinta-liga vermelha em renda com tiras na perna. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_36__4_.jpeg" },
-    { "nome": "Plug / Acessório Unissex 17cm", "preco": 50.00, "cat": "acessorios", "desc": "Acessório unissex anal/vaginal com ventosa. Tamanho 17 x 4,1 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37.jpeg" },
-    { "nome": "Gotas Huô Bing — Gel de Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel de massagem corporal. Sensação refrescante e alívio muscular. Uso diário.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__1_.jpeg" },
-    { "nome": "Tesão na Raba — Gel Dessensibilizante", "preco": 20.00, "cat": "geis", "desc": "Gel dessensibilizante excitante. Reduz a sensibilidade da região anal e aquece. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__2_.jpeg" },
-    { "nome": "Dragon & Tiger — Pomada Excitante", "preco": null, "cat": "geis", "desc": "Creme japonês excitante. Sensação de aquecimento e maior sensibilidade. Uso externo.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__3_.jpeg" },
-    { "nome": "Vibrador Duplo Unissex com Ventosa", "preco": 65.00, "cat": "acessorios", "desc": "Acessório duplo unissex com ventosa. Tamanhos 17,3 x 3,5 cm e 10,5 x 2,3 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__4_.jpeg" },
-    { "nome": "Lacradinha — Gel Adstringente", "preco": 20.00, "cat": "geis", "desc": "Gel adstringente feminino. Sensação de firmeza e frescor na região íntima. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_37__5_.jpeg" },
-    { "nome": "Conjunto Colegial — Vermelho", "preco": 30.00, "cat": "lingerie", "desc": "Conjunto sensual estilo colegial, renda e detalhes delicados. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38.jpeg" },
-    { "nome": "Sako Loko — Gel para Massagem", "preco": 20.00, "cat": "geis", "desc": "Gel para massagem corporal. Lubrifica, aumenta a sensibilidade e a diversão. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__1_.jpeg" },
-    { "nome": "Ah Now — Sexy Balls (cápsulas)", "preco": 20.00, "cat": "cuidados", "desc": "Cápsulas mastigáveis 7x1. Energia, disposição e excitação. Contém 3 unidades. Uso adulto.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__2_.jpeg" },
-    { "nome": "Algema Metal com Pelúcia Vermelha", "preco": 35.00, "cat": "acessorios", "desc": "Algema de metal com pelúcia vermelha. Toque macio e segurança. Acompanha chave.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__3_.jpeg" },
-    { "nome": "Óleo Japonês — Esquenta", "preco": 20.00, "cat": "geis", "desc": "Óleo corporal que esquenta e desperta o desejo. Ideal para sexo oral e massagem. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_38__4_.jpeg" },
-    { "nome": "Plug / Acessório Unissex 15cm", "preco": 50.00, "cat": "acessorios", "desc": "Acessório unissex com base ventosa. Tamanho 15,4 x 3,9 cm.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39.jpeg" },
-    { "nome": "Apimen — Sabonete Líquido For Men", "preco": 15.00, "cat": "cuidados", "desc": "Sabonete líquido masculino com extratos naturais. Limpeza eficaz e ação refrescante. 210ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__1_.jpeg" },
-    { "nome": "Body Gatinha — Tela Pink", "preco": 50.00, "cat": "lingerie", "desc": "Body sensual em tela com detalhes pink, acompanha orelhinhas. Tam. 36 a 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__2_.jpeg" },
-    { "nome": "Cinta-Liga Renda Branca", "preco": 30.00, "cat": "lingerie", "desc": "Cinta-liga em renda branca delicada. Tamanho único. Não acompanha calcinha.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__3_.jpeg" },
-    { "nome": "Cinta Peniana — Unissex", "preco": 35.00, "cat": "acessorios", "desc": "Cinta peniana com sustentação. Material resistente e macio, alças ajustáveis. Unissex.", "img": "WhatsApp_Image_2026-06-27_at_14_25_39__4_.jpeg" },
-    { "nome": "Hotball Plus — Cápsula Esquenta & Esfria", "preco": 15.00, "cat": "geis", "desc": "Cápsulas beijáveis sabor morango com menta gelada. Dupla sensação quente/frio. 2 unidades.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40.jpeg" },
-    { "nome": "Bola com Fita — Fetiche e Jogos", "preco": 40.00, "cat": "acessorios", "desc": "Mordaça de bola com fita de cetim para fetiche e jogos. Bola PVC macia. Unissex.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__1_.jpeg" },
-    { "nome": "Love Lub Ice — Lubrificante", "preco": 35.00, "cat": "lubrificantes", "desc": "Lubrificante corporal com efeito ICE refrescante. Base água. 60g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__2_.jpeg" },
-    { "nome": "Brutus — Gel Potencializador", "preco": 20.00, "cat": "geis", "desc": "Gel potencializador. Aumenta a disposição, melhora o desempenho e estimula a circulação. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__3_.jpeg" },
-    { "nome": "Conjunto Diaba — Vermelho", "preco": 30.00, "cat": "lingerie", "desc": "Conjunto sensual vermelho que valoriza as curvas. Tamanho único. Não acompanha acessórios.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__4_.jpeg" },
-    { "nome": "Body NCIS — Preto", "preco": 20.00, "cat": "lingerie", "desc": "Body sensual preto com recortes e amarrações. Tecido leve e elástico.", "img": "WhatsApp_Image_2026-06-27_at_14_25_40__5_.jpeg" },
-    { "nome": "Love Ice — Gel Umectante", "preco": 20.00, "cat": "geis", "desc": "Gel umectante corporal com efeito gelado que esquenta a paixão. Sabor morango. 30ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41.jpeg" },
-    { "nome": "Kit Fantasia Sensual", "preco": 30.00, "cat": "lingerie", "desc": "Kit fantasia: top, calcinha com tiras e tiras para as pernas. Uso adulto.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__1_.jpeg" },
-    { "nome": "Liga Renda com Laço", "preco": 15.00, "cat": "lingerie", "desc": "Liga de renda com laço e pérola. Ajuste confortável. Ideal para noivas e noites especiais.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__2_.jpeg" },
-    { "nome": "Conjunto Branco — Tamanho Único", "preco": 30.00, "cat": "lingerie", "desc": "Conjunto sensual branco, tecido leve com elasticidade. Tamanho único.", "img": "WhatsApp_Image_2026-06-27_at_14_25_41__3_.jpeg" },
-    { "nome": "Pétalas Aromáticas de Coração", "preco": 25.00, "cat": "cuidados", "desc": "50 pétalas em formato de coração, essência de rosas. Para decoração romântica. Reutilizáveis.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42.jpeg" },
-    { "nome": "Love Lub Neutro — Lubrificante", "preco": 35.00, "cat": "lubrificantes", "desc": "Lubrificante corporal neutro. Base água, não altera o cheiro natural da pele. 60g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__1_.jpeg" },
-    { "nome": "Vibrador Ponta de Língua", "preco": 40.00, "cat": "acessorios", "desc": "Vibrador ponta de língua unissex, com bateria. Estimulação localizada.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__2_.jpeg" },
-    { "nome": "Na Maldade — Perfume de Cueca", "preco": 25.00, "cat": "cuidados", "desc": "Perfume de cueca masculino. Fragrância marcante e longa duração. 40ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__3_.jpeg" },
-    { "nome": "Body NCIS Plus — Renda Preta", "preco": 50.00, "cat": "lingerie", "desc": "Body em renda floral com gargantilha e punhos. Acabamento reforçado. Plus size.", "img": "WhatsApp_Image_2026-06-27_at_14_25_42__4_.jpeg" },
-    { "nome": "Pinto Likes — Gel Térmico", "preco": 20.00, "cat": "geis", "desc": "Gel térmico corporal. Sensação de aquecimento e estímulo da circulação. Extratos naturais. 35g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43.jpeg" },
-    { "nome": "Suave Gotas — Lubrificação Íntima", "preco": 20.00, "cat": "lubrificantes", "desc": "Gel para lubrificação íntima. Fórmula hidrossolúvel, incolor e sem cheiro. 15ml.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__1_.jpeg" },
-    { "nome": "+Sabor Fresh Menta — Gel Corporal", "preco": 20.00, "cat": "cuidados", "desc": "Gel corporal sabor menta. Sensação de frescor com extrato de menta. Uso diário.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__2_.jpeg" },
-    { "nome": "Adesivos para Seios (kit 3)", "preco": 20.00, "cat": "acessorios", "desc": "Kit com 3 pares de adesivos para seios, discretos e reutilizáveis. À prova d'água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__3_.jpeg" },
-    { "nome": "Pó Mágico da Bruxa — Energético", "preco": 5.00, "cat": "cuidados", "desc": "Energético em pó para misturar na bebida. Mais energia e disposição.", "img": "WhatsApp_Image_2026-06-27_at_14_25_43__4_.jpeg" },
-    { "nome": "Espartilho Vermelho — Sem Meia", "preco": 90.00, "cat": "lingerie", "desc": "Espartilho vermelho com cinta-liga. Sem meia. Tam. 36 a 42.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44.jpeg" },
-    { "nome": "Dragão Chinês — Gel Excitante Super Quente", "preco": 20.00, "cat": "geis", "desc": "Gel excitante super quente. Calor intenso que incendeia o prazer. Versátil. 15g.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__1_.jpeg" },
-    { "nome": "Vibrador Rosa — Sugador", "preco": 100.00, "cat": "acessorios", "desc": "Sugador formato rosa com 10 modos de sucção/vibração. Carregamento magnético.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__2_.jpeg" },
-    { "nome": "Vibrador Clássico", "preco": 50.00, "cat": "acessorios", "desc": "Vibrador clássico em plástico ABS. Vibração poderosa, silencioso, à prova d'água.", "img": "WhatsApp_Image_2026-06-27_at_14_25_44__3_.jpeg" }
+    {
+      "nome": "QY Morango — Gel Excitante",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel excitante corporal sabor morango. Excita, aquece e aumenta a sensibilidade. 15ml.",
+      "img": "produto-001.jpeg"
+    },
+    {
+      "nome": "Termo Shock — Cápsula Vibratória",
+      "preco": 15.0,
+      "cat": "geis",
+      "desc": "Cápsula que esquenta e vibra em contato com a água. Uso íntimo externo. 1 unidade.",
+      "img": "produto-002.jpeg"
+    },
+    {
+      "nome": "Relaxana — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal que relaxa, aquece e estimula o prazer. 15ml.",
+      "img": "produto-003.jpeg"
+    },
+    {
+      "nome": "Fácil Lub Chocolate — Lubrificante",
+      "preco": 20.0,
+      "cat": "lubrificantes",
+      "desc": "Gel lubrificante íntimo sabor chocolate. Base aquosa, aroma suave. 45g.",
+      "img": "produto-004.jpeg"
+    },
+    {
+      "nome": "Mais BumBum — Gel Firmador",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal com efeito firmador e tonificante para a região dos glúteos. 15ml.",
+      "img": "produto-005.jpeg"
+    },
+    {
+      "nome": "Nu Talo — Aromatizante Bucal",
+      "preco": 25.0,
+      "cat": "cuidados",
+      "desc": "Aromatizante bucal que proporciona hálito fresco e combate o mau hálito. 15ml.",
+      "img": "produto-006.jpeg"
+    },
+    {
+      "nome": "Plug Anal Pompom",
+      "preco": 35.0,
+      "cat": "acessorios",
+      "desc": "Plug anal em metal com pompom removível. Formato anatômico, hipoalergênico. 1 unidade.",
+      "img": "produto-007.jpeg"
+    },
+    {
+      "nome": "Clitor Max — Gel Sensibilizante",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel sensibilizante para massagem corporal. Intensifica a sensibilidade da região clitoriana. 15ml.",
+      "img": "produto-008.jpeg"
+    },
+    {
+      "nome": "Taduro — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem com ativos naturais. Estimula a excitação e melhora a circulação. 15ml.",
+      "img": "produto-009.jpeg"
+    },
+    {
+      "nome": "Garganta Profunda — Bala Líquida",
+      "preco": 25.0,
+      "cat": "geis",
+      "desc": "Bala líquida sabor maçã verde. Refresca, lubrifica e esquenta levemente. Uso íntimo externo. 18ml.",
+      "img": "produto-010.jpeg"
+    },
+    {
+      "nome": "Kama Sutra — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal. Estimula a libido, intensifica o prazer e relaxa. 15ml.",
+      "img": "produto-011.jpeg"
+    },
+    {
+      "nome": "Love Ice Menta — Gel Beijável",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel beijável para massagem sabor menta ice. Sensação refrescante e lubrificante. 20ml.",
+      "img": "produto-012.jpeg"
+    },
+    {
+      "nome": "Gel Excitante Feminino",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel excitante feminino. Aumenta a excitação, hidrata e estimula o desejo. Testado ginecologicamente.",
+      "img": "produto-013.jpeg"
+    },
+    {
+      "nome": "Garji Prorrogação — Gel Masculino",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel corporal masculino que ajuda a prolongar o tempo da relação. Base água. 15g.",
+      "img": "produto-014.jpeg"
+    },
+    {
+      "nome": "Volumão — Gel Estimulante Masculino",
+      "preco": 30.0,
+      "cat": "geis",
+      "desc": "Gel excitante e estimulante masculino com ação vasodilatadora. Ginseng e damiana. Base água.",
+      "img": "produto-015.jpeg"
+    },
+    {
+      "nome": "Baby Doll — Tamanho Único",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Baby doll feminino confortável, blusinha de alças e shortinho. Veste do 36 ao 42.",
+      "img": "produto-016.jpeg"
+    },
+    {
+      "nome": "Pijama Conforto",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Pijama feminino tecido macio. Tamanho único, veste do 36 ao 42.",
+      "img": "produto-017.jpeg"
+    },
+    {
+      "nome": "Mama Teta — Gel Beijável",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel beijável para os seios, sabor ninho. Hidrata e desperta a sensualidade. 15g.",
+      "img": "produto-018.jpeg"
+    },
+    {
+      "nome": "Esparthela — Gel para Massagem",
+      "preco": 25.0,
+      "cat": "geis",
+      "desc": "Gel para massagem corporal sensual. Relaxamento, prazer e bem-estar. 30ml.",
+      "img": "produto-019.jpeg"
+    },
+    {
+      "nome": "Vemvara Sexy — Gel para Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem corporal sensual. Aquece, excita e hidrata a pele. 15ml.",
+      "img": "produto-020.jpeg"
+    },
+    {
+      "nome": "Conjunto Conforto que Acolhe",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Conjunto pijama leve e fresquinho. Tamanho único, veste do 36 ao 42.",
+      "img": "produto-021.jpeg"
+    },
+    {
+      "nome": "Body Eletrizante — Gel Feminino",
+      "preco": 15.0,
+      "cat": "geis",
+      "desc": "Gel corporal feminino com sensação eletrizante. Aumenta a sensibilidade ao toque. 62g.",
+      "img": "produto-022.jpeg"
+    },
+    {
+      "nome": "Camisola Sensual — Renda e Cetim",
+      "preco": 50.0,
+      "cat": "lingerie",
+      "desc": "Camisola sensual em renda e cetim, costas abertas, alças ajustáveis. Tamanho único, veste do 36 ao 42.",
+      "img": "produto-023.jpeg"
+    },
+    {
+      "nome": "Caliente — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal. Aquece, estimula e aumenta a sensibilidade. 15ml.",
+      "img": "produto-024.jpeg"
+    },
+    {
+      "nome": "Calcinha Fio Dental — Detalhe Amor",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Calcinha fio dental com pingente dourado 'AMOR'. Regulagem lateral. Veste do 36 ao 42.",
+      "img": "produto-025.jpeg"
+    },
+    {
+      "nome": "Turbo — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal com extratos naturais. Excita, aquece e ativa a circulação. 15ml.",
+      "img": "produto-026.jpeg"
+    },
+    {
+      "nome": "Sken'ta Sfria — Gel Quente e Frio",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem com dupla sensação quente e frio. Lubrifica e hidrata. 18g.",
+      "img": "produto-027.jpeg"
+    },
+    {
+      "nome": "Sais de Banho — Frutas Vermelhas",
+      "preco": 30.0,
+      "cat": "cuidados",
+      "desc": "Sais de banho com óleos essenciais, aroma frutas vermelhas. Relaxa e hidrata. 120g.",
+      "img": "produto-028.jpeg"
+    },
+    {
+      "nome": "Êxtase — Bolinha Intensificadora",
+      "preco": 20.0,
+      "cat": "acessorios",
+      "desc": "Bolinhas intensificadoras para uso interno. Tonificam a musculatura pélvica. Use com lubrificante.",
+      "img": "produto-029.jpeg"
+    },
+    {
+      "nome": "Espuma de Banho — Frutas Vermelhas",
+      "preco": 30.0,
+      "cat": "cuidados",
+      "desc": "Espuma de banho cremosa, aroma frutas vermelhas. Hidratação, frescor e prazer. 120ml.",
+      "img": "produto-030.jpeg"
+    },
+    {
+      "nome": "Boket Foodsex — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal. Aumenta a excitação e a sensibilidade. Ideal para casais. 15ml.",
+      "img": "produto-031.jpeg"
+    },
+    {
+      "nome": "Essa Fadinha — Gel para Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem. Lubrifica, desperta a sensualidade e refresca. 15g.",
+      "img": "produto-032.jpeg"
+    },
+    {
+      "nome": "Fácil Lub Menta — Lubrificante",
+      "preco": 20.0,
+      "cat": "lubrificantes",
+      "desc": "Gel lubrificante íntimo sabor menta. Base aquosa, aroma refrescante. 45g.",
+      "img": "produto-033.jpeg"
+    },
+    {
+      "nome": "Piriquita Massanhada — Gel",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem com sensação de calor e frio. Aumenta a sensibilidade. 15g.",
+      "img": "produto-034.jpeg"
+    },
+    {
+      "nome": "Aquelas Paradas Loucas — Gel",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem corporal sensual. Estimula a sensibilidade e desliza. 15ml.",
+      "img": "produto-035.jpeg"
+    },
+    {
+      "nome": "Tanga Tesão — Renda com Pingente",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Tanga em renda com detalhe dourado 'TESÃO'. Ajuste confortável. Tamanho único.",
+      "img": "produto-036.jpeg"
+    },
+    {
+      "nome": "Meia Arrastão com Strass",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Meia arrastão com strass (meia da coxa para baixo). Tamanho M.",
+      "img": "produto-037.jpeg"
+    },
+    {
+      "nome": "Tanga Vermelha — Renda com Pingente",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Tanga vermelha em renda com detalhe dourado 'AMOR'. Ajuste confortável. Tamanho único.",
+      "img": "produto-038.jpeg"
+    },
+    {
+      "nome": "Calcinha com Babado — Branca",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Calcinha branca com babado em renda delicada e cinta-liga de perna. Tamanho único, sem calcinha extra.",
+      "img": "produto-039.jpeg"
+    },
+    {
+      "nome": "Venda / Máscara Vermelha",
+      "preco": 15.0,
+      "cat": "acessorios",
+      "desc": "Venda/máscara vermelha em couro sintético. Desperta os sentidos com mais mistério.",
+      "img": "produto-040.jpeg"
+    },
+    {
+      "nome": "Cinta-Liga Renda Vermelha",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Cinta-liga em renda delicada vermelha. Tamanho único. Não acompanha calcinha.",
+      "img": "produto-041.jpeg"
+    },
+    {
+      "nome": "Calcinha com Babado — Branca II",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Calcinha branca com babado e laços em renda. Tamanho único.",
+      "img": "produto-042.jpeg"
+    },
+    {
+      "nome": "Meia 7/8 — Renda",
+      "preco": 20.0,
+      "cat": "lingerie",
+      "desc": "Meia 7/8 com renda delicada. Tamanho único, veste do 36 ao 42.",
+      "img": "produto-043.jpeg"
+    },
+    {
+      "nome": "Cinta-Liga com Tiras — Vermelha",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Cinta-liga vermelha em renda com tiras na perna. Tamanho único. Não acompanha calcinha.",
+      "img": "produto-044.jpeg"
+    },
+    {
+      "nome": "Plug / Acessório Unissex 17cm",
+      "preco": 50.0,
+      "cat": "acessorios",
+      "desc": "Acessório unissex anal/vaginal com ventosa. Tamanho 17 x 4,1 cm.",
+      "img": "produto-045.jpeg"
+    },
+    {
+      "nome": "Gotas Huô Bing — Gel de Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel de massagem corporal. Sensação refrescante e alívio muscular. Uso diário.",
+      "img": "produto-046.jpeg"
+    },
+    {
+      "nome": "Tesão na Raba — Gel Dessensibilizante",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel dessensibilizante excitante. Reduz a sensibilidade da região anal e aquece. 15g.",
+      "img": "produto-047.jpeg"
+    },
+    {
+      "nome": "Dragon & Tiger — Pomada Excitante",
+      "preco": null,
+      "cat": "geis",
+      "desc": "Creme japonês excitante. Sensação de aquecimento e maior sensibilidade. Uso externo.",
+      "img": "produto-048.jpeg"
+    },
+    {
+      "nome": "Vibrador Duplo Unissex com Ventosa",
+      "preco": 65.0,
+      "cat": "acessorios",
+      "desc": "Acessório duplo unissex com ventosa. Tamanhos 17,3 x 3,5 cm e 10,5 x 2,3 cm.",
+      "img": "produto-049.jpeg"
+    },
+    {
+      "nome": "Lacradinha — Gel Adstringente",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel adstringente feminino. Sensação de firmeza e frescor na região íntima. 15g.",
+      "img": "produto-050.jpeg"
+    },
+    {
+      "nome": "Conjunto Colegial — Vermelho",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Conjunto sensual estilo colegial, renda e detalhes delicados. Tamanho único.",
+      "img": "produto-051.jpeg"
+    },
+    {
+      "nome": "Sako Loko — Gel para Massagem",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel para massagem corporal. Lubrifica, aumenta a sensibilidade e a diversão. 15g.",
+      "img": "produto-052.jpeg"
+    },
+    {
+      "nome": "Ah Now — Sexy Balls (cápsulas)",
+      "preco": 20.0,
+      "cat": "cuidados",
+      "desc": "Cápsulas mastigáveis 7x1. Energia, disposição e excitação. Contém 3 unidades. Uso adulto.",
+      "img": "produto-053.jpeg"
+    },
+    {
+      "nome": "Algema Metal com Pelúcia Vermelha",
+      "preco": 35.0,
+      "cat": "acessorios",
+      "desc": "Algema de metal com pelúcia vermelha. Toque macio e segurança. Acompanha chave.",
+      "img": "produto-054.jpeg"
+    },
+    {
+      "nome": "Óleo Japonês — Esquenta",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Óleo corporal que esquenta e desperta o desejo. Ideal para sexo oral e massagem. 15ml.",
+      "img": "produto-055.jpeg"
+    },
+    {
+      "nome": "Plug / Acessório Unissex 15cm",
+      "preco": 50.0,
+      "cat": "acessorios",
+      "desc": "Acessório unissex com base ventosa. Tamanho 15,4 x 3,9 cm.",
+      "img": "produto-056.jpeg"
+    },
+    {
+      "nome": "Apimen — Sabonete Líquido For Men",
+      "preco": 15.0,
+      "cat": "cuidados",
+      "desc": "Sabonete líquido masculino com extratos naturais. Limpeza eficaz e ação refrescante. 210ml.",
+      "img": "produto-057.jpeg"
+    },
+    {
+      "nome": "Body Gatinha — Tela Pink",
+      "preco": 50.0,
+      "cat": "lingerie",
+      "desc": "Body sensual em tela com detalhes pink, acompanha orelhinhas. Tam. 36 a 42.",
+      "img": "produto-058.jpeg"
+    },
+    {
+      "nome": "Cinta-Liga Renda Branca",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Cinta-liga em renda branca delicada. Tamanho único. Não acompanha calcinha.",
+      "img": "produto-059.jpeg"
+    },
+    {
+      "nome": "Cinta Peniana — Unissex",
+      "preco": 35.0,
+      "cat": "acessorios",
+      "desc": "Cinta peniana com sustentação. Material resistente e macio, alças ajustáveis. Unissex.",
+      "img": "produto-060.jpeg"
+    },
+    {
+      "nome": "Hotball Plus — Cápsula Esquenta & Esfria",
+      "preco": 15.0,
+      "cat": "geis",
+      "desc": "Cápsulas beijáveis sabor morango com menta gelada. Dupla sensação quente/frio. 2 unidades.",
+      "img": "produto-061.jpeg"
+    },
+    {
+      "nome": "Bola com Fita — Fetiche e Jogos",
+      "preco": 40.0,
+      "cat": "acessorios",
+      "desc": "Mordaça de bola com fita de cetim para fetiche e jogos. Bola PVC macia. Unissex.",
+      "img": "produto-062.jpeg"
+    },
+    {
+      "nome": "Love Lub Ice — Lubrificante",
+      "preco": 35.0,
+      "cat": "lubrificantes",
+      "desc": "Lubrificante corporal com efeito ICE refrescante. Base água. 60g.",
+      "img": "produto-063.jpeg"
+    },
+    {
+      "nome": "Brutus — Gel Potencializador",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel potencializador. Aumenta a disposição, melhora o desempenho e estimula a circulação. 15g.",
+      "img": "produto-064.jpeg"
+    },
+    {
+      "nome": "Conjunto Diaba — Vermelho",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Conjunto sensual vermelho que valoriza as curvas. Tamanho único. Não acompanha acessórios.",
+      "img": "produto-065.jpeg"
+    },
+    {
+      "nome": "Body NCIS — Preto",
+      "preco": 20.0,
+      "cat": "lingerie",
+      "desc": "Body sensual preto com recortes e amarrações. Tecido leve e elástico.",
+      "img": "produto-066.jpeg"
+    },
+    {
+      "nome": "Love Ice — Gel Umectante",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel umectante corporal com efeito gelado que esquenta a paixão. Sabor morango. 30ml.",
+      "img": "produto-067.jpeg"
+    },
+    {
+      "nome": "Kit Fantasia Sensual",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Kit fantasia: top, calcinha com tiras e tiras para as pernas. Uso adulto.",
+      "img": "produto-068.jpeg"
+    },
+    {
+      "nome": "Liga Renda com Laço",
+      "preco": 15.0,
+      "cat": "lingerie",
+      "desc": "Liga de renda com laço e pérola. Ajuste confortável. Ideal para noivas e noites especiais.",
+      "img": "produto-069.jpeg"
+    },
+    {
+      "nome": "Conjunto Branco — Tamanho Único",
+      "preco": 30.0,
+      "cat": "lingerie",
+      "desc": "Conjunto sensual branco, tecido leve com elasticidade. Tamanho único.",
+      "img": "produto-070.jpeg"
+    },
+    {
+      "nome": "Pétalas Aromáticas de Coração",
+      "preco": 25.0,
+      "cat": "cuidados",
+      "desc": "50 pétalas em formato de coração, essência de rosas. Para decoração romântica. Reutilizáveis.",
+      "img": "produto-071.jpeg"
+    },
+    {
+      "nome": "Love Lub Neutro — Lubrificante",
+      "preco": 35.0,
+      "cat": "lubrificantes",
+      "desc": "Lubrificante corporal neutro. Base água, não altera o cheiro natural da pele. 60g.",
+      "img": "produto-072.jpeg"
+    },
+    {
+      "nome": "Vibrador Ponta de Língua",
+      "preco": 40.0,
+      "cat": "acessorios",
+      "desc": "Vibrador ponta de língua unissex, com bateria. Estimulação localizada.",
+      "img": "produto-073.jpeg"
+    },
+    {
+      "nome": "Na Maldade — Perfume de Cueca",
+      "preco": 25.0,
+      "cat": "cuidados",
+      "desc": "Perfume de cueca masculino. Fragrância marcante e longa duração. 40ml.",
+      "img": "produto-074.jpeg"
+    },
+    {
+      "nome": "Body NCIS Plus — Renda Preta",
+      "preco": 50.0,
+      "cat": "lingerie",
+      "desc": "Body em renda floral com gargantilha e punhos. Acabamento reforçado. Plus size.",
+      "img": "produto-075.jpeg"
+    },
+    {
+      "nome": "Pinto Likes — Gel Térmico",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel térmico corporal. Sensação de aquecimento e estímulo da circulação. Extratos naturais. 35g.",
+      "img": "produto-076.jpeg"
+    },
+    {
+      "nome": "Suave Gotas — Lubrificação Íntima",
+      "preco": 20.0,
+      "cat": "lubrificantes",
+      "desc": "Gel para lubrificação íntima. Fórmula hidrossolúvel, incolor e sem cheiro. 15ml.",
+      "img": "produto-077.jpeg"
+    },
+    {
+      "nome": "+Sabor Fresh Menta — Gel Corporal",
+      "preco": 20.0,
+      "cat": "cuidados",
+      "desc": "Gel corporal sabor menta. Sensação de frescor com extrato de menta. Uso diário.",
+      "img": "produto-078.jpeg"
+    },
+    {
+      "nome": "Adesivos para Seios (kit 3)",
+      "preco": 20.0,
+      "cat": "acessorios",
+      "desc": "Kit com 3 pares de adesivos para seios, discretos e reutilizáveis. À prova d'água.",
+      "img": "produto-079.jpeg"
+    },
+    {
+      "nome": "Pó Mágico da Bruxa — Energético",
+      "preco": 5.0,
+      "cat": "cuidados",
+      "desc": "Energético em pó para misturar na bebida. Mais energia e disposição.",
+      "img": "produto-080.jpeg"
+    },
+    {
+      "nome": "Espartilho Vermelho — Sem Meia",
+      "preco": 90.0,
+      "cat": "lingerie",
+      "desc": "Espartilho vermelho com cinta-liga. Sem meia. Tam. 36 a 42.",
+      "img": "produto-081.jpeg"
+    },
+    {
+      "nome": "Dragão Chinês — Gel Excitante Super Quente",
+      "preco": 20.0,
+      "cat": "geis",
+      "desc": "Gel excitante super quente. Calor intenso que incendeia o prazer. Versátil. 15g.",
+      "img": "produto-082.jpeg"
+    },
+    {
+      "nome": "Vibrador Rosa — Sugador",
+      "preco": 100.0,
+      "cat": "acessorios",
+      "desc": "Sugador formato rosa com 10 modos de sucção/vibração. Carregamento magnético.",
+      "img": "produto-083.jpeg"
+    },
+    {
+      "nome": "Vibrador Clássico",
+      "preco": 50.0,
+      "cat": "acessorios",
+      "desc": "Vibrador clássico em plástico ABS. Vibração poderosa, silencioso, à prova d'água.",
+      "img": "produto-084.jpeg"
+    }
   ]
 }
